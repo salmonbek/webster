@@ -16,3 +16,16 @@ video.addEventListener("timeupdate", () => {
     video.currentTime = 0; // qayta boshlaydi
   }
 });
+
+const bg = document.querySelector(".home-bg");
+const images = [
+  "../images/img1.webp",
+  "../images/img2.webp",
+  "../images/img3.webp",
+  "../images/img4.webp",
+];
+let i = 0;
+setInterval(() => {
+  i = (i + 1) % images.length;
+  bg.style.backgroundImage = `url(${images[i]})`;
+}, 2000);

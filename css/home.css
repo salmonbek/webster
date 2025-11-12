@@ -24,3 +24,140 @@
   transform: scale(1.1);
   transition: 0.5s;
 }
+
+/* HOME SECTION */
+.home {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.home-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/img1.webp");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  transition: background-image 0.8s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.headline {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  margin: 0.4rem 0;
+  line-height: 1.1;
+}
+
+.sub {
+  opacity: 0.95;
+  margin-bottom: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 0.6rem;
+}
+
+.btn.primary {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.audience {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Scroll-down arrow */
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.scroll-down span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(45deg);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, 0) rotate(45deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, 10px) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 0) rotate(45deg);
+    opacity: 0.7;
+  }
+}
+
+.card-1 {
+  display: flex;
+}
+
+.card-items {
+  padding: 10px;
+}
+/* Features section */
+
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .home {
+    height: auto;
+    padding: 3rem 0;
+  }
+}

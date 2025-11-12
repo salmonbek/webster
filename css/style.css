@@ -75,7 +75,14 @@ ul a:hover {
   cursor: pointer;
 }
 
+.hero-left p {
+  margin-bottom: 15px;
+}
+
 @media (max-width: 850px) {
+  .hero-left h1 {
+    font-size: 30px;
+  }
   .nav-list {
     gap: 35px;
   }
@@ -84,6 +91,10 @@ ul a:hover {
 @media (max-width: 750px) {
   .nav-list {
     gap: 20px;
+  }
+  .hero-section {
+    text-align: center;
+    flex-direction: column;
   }
 }
 

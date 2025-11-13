@@ -60,6 +60,11 @@ iframe {
   padding-left: 20px;
 }
 
+.paragraph-r {
+  margin-top: 20px;
+  color: grey;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .resource-card .icon {

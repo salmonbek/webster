@@ -52,6 +52,14 @@ footer h4 {
   color: white;
 }
 
+.home-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .f-flex {
   display: flex;
   align-items: center;

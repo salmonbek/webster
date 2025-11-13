@@ -1,6 +1,7 @@
 @import url("../css/home.css");
 @import url("../css/task.css");
 @import url("../css/conclusion.css");
+@import url("../css/resourse.css");
 
 * {
   margin: 0;
@@ -24,6 +25,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.hero-section {
+  gap: 20px;
 }
 
 header {

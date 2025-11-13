@@ -1,0 +1,80 @@
+.evaluation-section {
+  padding-top: 150px; /* TOP masofa */
+  padding-bottom: 80px;
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+.table-responsive {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tip {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.evaluation-heading {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.evaluation-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.evaluation-table th,
+.evaluation-table td {
+  vertical-align: middle;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #0d6efd; /* border rangli va qalin */
+}
+
+.evaluation-table thead th {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: bold;
+}
+
+.evaluation-table tbody tr.table-success {
+  background-color: #d1e7dd; /* Total qatori uchun light green */
+  font-weight: bold;
+}
+
+/* Tip styling */
+.evaluation-section .tip {
+  font-style: italic;
+  color: #198754; /* green accent */
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .evaluation-section {
+    padding-top: 100px;
+  }
+  .evaluation-heading {
+    font-size: 32px;
+  }
+  .evaluation-text {
+    font-size: 16px;
+  }
+  .evaluation-table th,
+  .evaluation-table td {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  .tip {
+    font-size: 14px;
+  }
+}

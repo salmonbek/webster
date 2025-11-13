@@ -18,7 +18,6 @@
 
 .hero-right img {
   border-radius: 20px;
-  border: 1px solid black;
 }
 .hero-right img:hover {
   transform: scale(1.1);

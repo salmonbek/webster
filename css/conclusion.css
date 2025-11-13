@@ -1,0 +1,29 @@
+.conclusion-home {
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* qoraytirish overlay */ url("../images/learn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.filter {
+  backdrop-filter: blur(3px);
+}
+.conclusion-home h1 {
+  color: white;
+}
+
+.conclusion-home p {
+  color: white;
+}
+.con-flex {
+  padding: 10px 20px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .conclusion-home {
+    background-position: center;
+  }
+}

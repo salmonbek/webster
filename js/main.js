@@ -29,3 +29,43 @@ setInterval(() => {
   i = (i + 1) % images.length;
   bg.style.backgroundImage = `url(${images[i]})`;
 }, 2000);
+
+const accordions = document.querySelectorAll(".accordion-item");
+
+accordions.forEach((item) => {
+  const header = item.querySelector(".accordion-header");
+  header.addEventListener("click", () => {
+    // Boshqalar yopilsin
+    accordions.forEach((i) => {
+      if (i !== item) i.classList.remove("active");
+    });
+    // Shu bosilgani ochilib/yopilsin
+    item.classList.toggle("active");
+  });
+});
+const carousel = document.querySelector(".carousel");
+const dots = document.querySelectorAll(".dot");
+
+let index = 0;
+const total = dots.length;
+
+function changeSlide() {
+  index = (index + 1) % total;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+// Har 2 soniyada avtomatik o‘tish
+setInterval(changeSlide, 2000);
+
+// Foydalanuvchi nuqtani bossin
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    index = i;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((d) => d.classList.remove("active"));
+    dot.classList.add("active");
+  });
+});

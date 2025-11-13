@@ -69,3 +69,113 @@
 .task-bar {
   padding-top: 100px;
 }
+
+.process-1 {
+  padding-top: 10000px;
+  padding-bottom: 100px;
+}
+
+.carousel-item img {
+  width: 100%;
+  /* max-height: 600px; */
+  width: 10px;
+  border-radius: 20px;
+}
+
+/* Rasmlar o‘lchami bir xil bo‘lsin va kichiklashsin */
+.carousel-img {
+  height: 300px; /* xohlagan balandlik, telefon uchun moslashadi */
+  object-fit: cover; /* rasmlarni crop qilib, bir xil ko‘rinish beradi */
+}
+
+/* Left va Right buttonlar */
+.custom-btn {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.7) !important; /* qora fon */
+}
+
+.custom-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.process-page {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+  padding-top: 300px;
+}
+
+/* Step blocks styling */
+.process-step {
+  background-color: #ffffff;
+  border-left: 6px solid #0d6efd; /* default accent */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Step headings */
+.process-step h5 {
+  color: #0d6efd;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* List styling */
+.process-step ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Output styling */
+.process-step .output {
+  font-style: italic;
+  color: #198754; /* green accent for output */
+  margin-top: 10px;
+}
+
+/* Different accent colors for each step */
+.step1 {
+  border-left-color: #0dcaf0;
+} /* cyan */
+.step2 {
+  border-left-color: #ffc107;
+} /* yellow */
+.step3 {
+  border-left-color: #198754;
+} /* green */
+.step4 {
+  border-left-color: #fd7e14;
+} /* orange */
+.step5 {
+  border-left-color: #6f42c1;
+} /* purple */
+.step6 {
+  border-left-color: #dc3545;
+} /* red */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .process-step {
+    padding: 20px 15px;
+  }
+  .process-step h5 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Telefon / mobil uchun responsive */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 200px;
+  }
+  .custom-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

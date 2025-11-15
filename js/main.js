@@ -69,3 +69,49 @@ dots.forEach((dot, i) => {
     dot.classList.add("active");
   });
 });
+
+const texts = [
+  "Listening Without Reacting",
+  "Mindful Listening Skills",
+  "Deep Communication Practice",
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+  const words = [
+    "Listening Without Reacting",
+    "Mindful Listening Skills",
+    "Deep Communication Practice",
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const typed = document.getElementById("typed");
+
+  function type() {
+    const current = words[wordIndex];
+
+    if (!isDeleting) {
+      typed.textContent = current.substring(0, charIndex++);
+    } else {
+      typed.textContent = current.substring(0, charIndex--);
+    }
+
+    if (charIndex === current.length + 1) {
+      isDeleting = true;
+      setTimeout(type, 800);
+      return;
+    }
+
+    if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+    }
+
+    let speed = isDeleting ? 60 : 100;
+    setTimeout(type, speed);
+  }
+
+  type();
+});

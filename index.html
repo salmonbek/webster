@@ -7,6 +7,7 @@
     <title>WebQuest by Shuhrat and Dingjian</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/logo.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -44,8 +45,11 @@
             <div class="container hero-container">
                 <div class="hero-section">
                     <div class="hero-left">
-                        <h1>Mindful Communication: Listening Without Reacting</h1>
-                        <p>Have you ever been in a meeting where someone disagreed with you, and you instantly felt
+                        <h1 data-aos-duration="800" data-aos="fade-right">Mindful Communication: Listening Without
+                            Reacting</h1>
+                        <p data-aos-duration="1500" data-aos="fade-right">Have you ever been in a meeting where someone
+                            disagreed with you, and
+                            you instantly felt
                             defensive?
                             Your heart beats faster, your thoughts race, and you’re ready to reply before the other
                             person
@@ -53,7 +57,7 @@
                             finishes.</p>
                     </div>
                     <div class="hero-right">
-                        <img src="./images/carousel1.webp" alt="">
+                        <img data-aos-duration="1000" data-aos="flip-up" src="./images/carousel1.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -70,7 +74,7 @@
             <div class="home-content container">
                 <div class="badge">45 min • WebQuest</div>
                 <h1 class="headline">Learn to pause, listen, and respond calmly.</h1>
-                <p class="sub">
+                <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="sub">
                     Have you ever felt defensive in a meeting and wanted to reply instantly?
                     This short WebQuest helps young professionals (20–30) practise mindful listening and calm responses.
                 </p>
@@ -137,6 +141,10 @@
         crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
